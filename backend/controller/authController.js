@@ -1,5 +1,5 @@
 import { userModel } from "../models/user.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 export const registerController=async(req,res)=>{
         try{
             const {email,address,phone,name,password}=req.body;
