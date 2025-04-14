@@ -14,7 +14,7 @@ const Login = () => {
   // Email/Password Login
   const handlePasswordLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/login", { email, password });
+      const res = await axios.post("https://login-application-heyd.onrender.com/api/auth/login", { email, password });
       alert(res.data.message);
       toast.success(res.data.message)
       navigate("/")

@@ -21,7 +21,7 @@ const Register = () => {
     setError("");  // Clear previous error
 
     try {
-      const res = await axios.post("http://localhost:8000/api/auth/register", { name, email, phone, password, address });
+      const res = await axios.post("https://login-application-heyd.onrender.com/api/auth/register", { name, email, phone, password, address });
 
      
       toast.success(res.data.message);
